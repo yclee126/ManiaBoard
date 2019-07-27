@@ -14,32 +14,64 @@ Uses Arduino Pro Micro(Arduino Leonardo), WS2812B LED strip, Kalih Sockets.
 Features
 --------
 
-* 6 Keys + 2 Function keys
-  * Simultaneous input up to 12 keys (Keyboard.h library modified)
-  * 350Hz polling rate on average (Up to 400Hz)
-  * Fast debouncing (Low latency)
-* Exchangeable Cherry keys (Kalih socket)
-  * Easy to repair
-* Custom Keycaps
-  * Lightweight and durable
-* Anti-Slip Pads
-  * Works with cheap rubber pads
-* LED for each 6 keys
-  * Changes color by key press
-  * Changes color by KPS(Keys Per Second)
-  * 4 different LED modes
-  * Fast data transfer code (Low latency)
-* Multiple Keymaps
-  * Hold K7 to Cycle
-* Built-in CUI Menu
-  * Change key mapping
-  * Manage keymap slots
-  * Multilingual menu (WIP)
+- 6 Keys + 2 Function keys
+  - Simultaneous input up to 12 keys (Keyboard.h library modified)
+  - 350Hz polling rate on average (Up to 400Hz)
+  - Fast debouncing (Low latency)
+- Exchangeable Cherry keys (Kalih socket)
+  - Easy to repair
+- Custom Keycaps
+  - Lightweight and durable
+- Anti-Slip Pads
+  - Works with cheap rubber pads
+- LED for each 6 keys
+  - Changes color by key press
+  - Changes color by KPS(Keys Per Second)
+  - 4 different LED modes
+  - Fast data transfer code (Low latency)
+- Multiple Keymaps
+  - Hold K7 to Cycle
+- Built-in CUI Menu
+  - Change key mapping
+  - Manage keymap slots
+  - Multilingual menu (WIP)
+  
+Manual
+------
+
+1. Controls
+```
+          +----+----+
+ (Arduino)| K1 | K2 | K7
++----+----+----+----+
+| K3 | K4 | K5 | K6 | K8
++----+----+----+----+
+```
+- K1 - K6
+  - Normal Keys
+- K7 : Function Key 1
+  - Short : K7
+  - Long : Reset KPS display(K2 LED)
+- K8 : Function Key 2
+  - Short : K8
+  - Long : Cycle keymaps
+- K7 & K8
+  - Short : Enter settings (open cmd or any text editor to print)
+  - Long : Cycle led mode
+
+2. CUI Menu
+```
+          +----+----+
+ (Arduino)| UP |    |
++----+----+----+----+
+|    | BK | DN | OK |
++----+----+----+----+
+```
+Hold UP or DN for fast control.
   
 TODO
 ----
 
-* Schematics
-* CAD Models
-* Instruction manual?
+- Schematics
+- CAD Models
 
