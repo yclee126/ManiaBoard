@@ -109,5 +109,6 @@ D10-330R----din  WS2812B Strip (6LEDs) #
 TODO
 ----
 
-- CAD Models
+- Complete the menu
+- Optimize the ee
 
