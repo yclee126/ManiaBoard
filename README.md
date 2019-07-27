@@ -17,7 +17,8 @@ Features
 - 6 Keys + 2 Function keys
   - Simultaneous input up to 12 keys (Keyboard.h library modified)
   - 350Hz polling rate on average (Up to 400Hz)
-  - Fast debouncing (Low latency)
+  - Fast assembly-level pin reading
+  - Fast debouncing
 - Exchangeable Cherry keys (Kalih socket)
   - Easy to repair
 - Custom Keycaps
@@ -28,7 +29,7 @@ Features
   - Changes color by key press
   - Changes color by KPS(Keys Per Second)
   - 4 different LED modes
-  - Fast data transfer code (Low latency)
+  - Fast data transfer code
 - Multiple Keymaps
   - Hold K7 to Cycle
 - Built-in CUI Menu
@@ -68,10 +69,45 @@ Manual
 +----+----+----+----+
 ```
 Hold UP or DN for fast control.
-  
+
+Schematic
+---------
+```
+Dxx = Arduino digital Pin number
+[KS] = Kalih Socket
+[PB] = Push Button
+330R = 330ohm resistor
+100uF = 100uF capacitor
+
+        GND
+         |
+D2--[KS]-+  //K1
+	       |
+D3--[KS]-+  //K2
+	       |
+D4--[KS]-+  //K3
+	       |
+D5--[KS]-+  //K4
+	       |
+D6--[KS]-+  //K5
+	       |
+D7--[KS]-+  //K6
+	       |
+D14-[PB]-+  //K7
+	       |
+D15-[PB]-+  //K8
+         |
+	    	 |  ############################
+         +--gnd                        #
+D10-330R----din  WS2812B Strip (6LEDs) #
+         +--vin                        #
+	     	 |  ############################
+     		 |
+	     	+5V--100uF--GND
+```
+
 TODO
 ----
 
-- Schematics
 - CAD Models
 
