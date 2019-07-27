@@ -36,6 +36,10 @@ Features
   * Manage keymap slots
   * Multilingual menu (WIP)
   
-WIP
----
+TODO
+----
+
+* Schematics
+* CAD Models
+* Instruction manual?
 
