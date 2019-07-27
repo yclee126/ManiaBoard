@@ -9,6 +9,8 @@ This has been for over a year before uploaded here(and everywhere else), and sti
 
 Uses Arduino Pro Micro(Arduino Leonardo), WS2812B LED strip, Kalih Sockets.
 
+![20190727_104836](https://user-images.githubusercontent.com/44800937/61988606-6c2fd800-b05e-11e9-9c30-4bb0c95662bd.png)
+
 Features
 --------
 
@@ -20,6 +22,8 @@ Features
   * Easy to repair
 * Custom Keycaps
   * Lightweight and durable
+* Anti-Slip Pads
+  * Works with cheap rubber pads
 * LED for each 6 keys
   * Changes color by key press
   * Changes color by KPS(Keys Per Second)
