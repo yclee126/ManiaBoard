@@ -122,7 +122,7 @@ Parts
  - 2 * Push buttons
  - 4 * M4 x 12.5mm Screws
    - Or in any length between 11.5mm and 13mm
- - 4 * M4 Half lock nuts
+ - 4 * M4 lock nuts
  - 1 * WS2812B LED strip (6 LEDs)
  - 2 * 10pin Pin header socket
  - 1 * PCB piece about size of arduino
