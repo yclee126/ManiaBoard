@@ -154,5 +154,5 @@ TODO
 ----
 
 - Complete the menu
-- Optimize the ee
+- Optimize everything
 
