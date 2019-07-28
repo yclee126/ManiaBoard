@@ -11,6 +11,9 @@ Uses Arduino Pro Micro(Arduino Leonardo), WS2812B LED strip, Kalih Sockets.
 
 ![20190727_104836](https://user-images.githubusercontent.com/44800937/61988606-6c2fd800-b05e-11e9-9c30-4bb0c95662bd.png)
 
+Arduino's usb socket become loose over time with my intense gameplay and caused occasional disconnection.
+So I decided to use jumper wires instead until the next build. Yes, I'm lazy.
+
 Features
 --------
 
