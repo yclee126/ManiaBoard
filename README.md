@@ -132,6 +132,8 @@ Parts
    - Or in any length between 11.5mm and 13mm
  - 4 * M4 lock nuts
  - 1 * WS2812B LED strip (6 LEDs)
+ - 1 * 330ohm Resistor
+ - 1 * 100uF Capacitor (5V and up)
  - 2 * 10pin Pin header socket
  - 1 * PCB piece about size of arduino
  
