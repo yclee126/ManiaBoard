@@ -64,6 +64,8 @@ Manual
   - Long : Cycle LED mode
 
 2. CUI Menu
+Press K7 & K8 briefly to enter the setup.
+Open cmd or any text editor program to print.
 ```
           +----+----+
  (Arduino)| UP |    |
@@ -87,9 +89,9 @@ Manual
 Hold UP or DN for fast control.
 
 3. LED Modes
-
 The below map indicates which LED mode is set when it's cycling.
 e.g. K6 LED is lit = Mode 4
+Press K7 & K8 for a while to cycle.
 ```
           +----+----+
  (Arduino)|    |    |
@@ -98,19 +100,23 @@ e.g. K6 LED is lit = Mode 4
 +----+----+----+----+
 ```
  - Mode 1 : Bright Mode
-   - Shows current KPS if not pressed
-   - Shows invert of current color if pressed
-   - K2 LED as Max KPS indicator
+   - *Colorful!*
+     - Shows current KPS if not pressed
+     - Shows invert of current color if pressed
+     - K2 LED as Max KPS indicator
  - Mode 2 : Dark Mode
-   - Shows nothing if not pressed (except for K2)
-   - Shows current KPS if pressed
-   - K2 LED as Max KPS indicator
+   - *Economic lighting.*
+     - Shows nothing if not pressed (except for K2)
+     - Shows current KPS if pressed
+     - K2 LED as Max KPS indicator
  - Mode 3 : Mood Mode
-   - Shows nothing if pressed or not (except for K2)
-   - K2 LED as Max KPS indicator, but without the flash effect
- - Mode 4 : Blackout Mode
-   - Shows nothing if pressed or not
-   - But Max KPS is still being calculated (displayed on the settings menu)
+   - *Just the feeling.*
+     - Shows nothing if pressed or not (except for K2)
+     - K2 LED as Max KPS indicator, but without the flash effect
+ - Mode 4 : Stealth Mode
+   - *Only you and your monitor.*
+     - Shows nothing if pressed or not
+     - But Max KPS is still being calculated (displayed on the settings menu)
    
 LED shows current keymap color when it's cycling keymaps, regardless of which LED mode is set.
 
@@ -172,4 +178,5 @@ TODO
 - Optimize everything
 - Make Thumb key for 5K maps
 - Make right hand keyboard for 10K maps
+- Find a better way to display KPS
 
