@@ -113,7 +113,20 @@ e.g. K6 LED is lit = Mode 4
    - But Max KPS is still being calculated (displayed on the settings menu)
    
 LED shows current keymap color when it's cycling keymaps, regardless of which LED mode is set.
-   
+
+Parts
+-----
+ - 1 * Arduino Pro Micro
+ - 6 * Kalih sockets
+ - 6 * Transparent Cherry MX switches
+ - 2 * Push buttons
+ - 4 * M4 x 12.5mm Screws
+   - Or in any length between 11.5mm and 13mm
+ - 4 * M4 Half lock nuts
+ - 1 * WS2812B LED strip (6 LEDs)
+ - 2 * 10pin Pin header socket
+ - 1 * PCB piece about size of arduino
+
 Schematic
 ---------
 ```
