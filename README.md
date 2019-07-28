@@ -127,7 +127,7 @@ Parts
  - 2 * 10pin Pin header socket
  - 1 * PCB piece about size of arduino
  
- The screws and nuts can be gathered from 과학상자 "Science Box".
+ The screws and nuts can be gathered from 과학상자("Science Box") kit.
 
 Schematic
 ---------
