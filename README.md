@@ -155,4 +155,6 @@ TODO
 
 - Complete the menu
 - Optimize everything
+- Make Thumb key for 5K maps
+- Make right hand keyboard for 10K maps
 
