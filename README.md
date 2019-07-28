@@ -95,7 +95,7 @@ The below map indicates which LED mode is set when it's cycling.
 
 e.g. K6 LED is lit = Mode 4
 
-Press K7 & K8 for a while to cycle.
+Press and hold K7 & K8 to cycle.
 ```
           +----+----+
  (Arduino)|    |    |
