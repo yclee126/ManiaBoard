@@ -122,17 +122,17 @@ Dxx = Arduino digital Pin number
 
         GND
          |
-D2--[KS]-+  //K1
+D02-[KS]-+  //K1
 	 |
-D3--[KS]-+  //K2
+D03-[KS]-+  //K2
 	 |
-D4--[KS]-+  //K3
+D04-[KS]-+  //K3
 	 |
-D5--[KS]-+  //K4
+D05-[KS]-+  //K4
 	 |
-D6--[KS]-+  //K5
+D06-[KS]-+  //K5
 	 |
-D7--[KS]-+  //K6
+D07-[KS]-+  //K6
 	 |
 D14-[PB]-+  //K7
 	 |
