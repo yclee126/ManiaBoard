@@ -312,6 +312,8 @@ void setup() {
   
 }
 
+// Polling rate must be measured as double of A3's output!!
+
 void loop() {
   
   keyState[0][0] = KEY0INPUT;
