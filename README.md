@@ -64,6 +64,7 @@ Manual
   - Long : Cycle LED mode
 
 2. CUI Menu
+
 Press K7 & K8 briefly to enter the setup.
 Open cmd or any text editor program to print.
 ```
@@ -89,6 +90,7 @@ Open cmd or any text editor program to print.
 Hold UP or DN for fast control.
 
 3. LED Modes
+
 The below map indicates which LED mode is set when it's cycling.
 e.g. K6 LED is lit = Mode 4
 Press K7 & K8 for a while to cycle.
