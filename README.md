@@ -19,7 +19,7 @@ Features
 
 - 6 Keys + 2 Function keys
   - Simultaneous input up to 12 keys (Keyboard.h library modified)
-  - 350Hz polling rate on average (Up to 400Hz)
+  - 700Hz polling rate on average (Up to 1000Hz)
   - Fast assembly-level pin reading
   - Fast debouncing
 - Kalih Socket mount
