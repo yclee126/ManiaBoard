@@ -58,7 +58,7 @@ Manual
   - Long : Cycle keymaps
 - K7 & K8
   - Short : Enter settings (open cmd or any text editor to print)
-  - Long : Cycle led mode
+  - Long : Cycle LED mode
 
 2. CUI Menu
 ```
@@ -68,6 +68,19 @@ Manual
 |    | BK | DN | OK |
 +----+----+----+----+
 ```
+ - UP : Up
+   - Move up from current menu
+   - Increase value
+ - DN : Down
+   - Move down from current menu
+   - Decrease value
+ - BK : Back
+   - Exit from current menu
+   - Cancel operation (WIP)
+ - OK : Ok
+   - Go into selected menu
+   - Confirm
+
 Hold UP or DN for fast control.
 
 3. LED Modes
