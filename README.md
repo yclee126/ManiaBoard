@@ -29,10 +29,11 @@ Features
 - Anti-Slip Pads
   - Works with cheap rubber pads
 - LED for each 6 keys
-  - Changes color by key press
-  - Changes color by KPS(Keys Per Second)
   - 4 different LED modes
   - Fast data transfer code
+- KPS Calculation (Keys Per Second)
+  - Up to 600 KPS
+  - Max KPS indication
 - Multiple Keymaps
   - With distinct LED color
 - Built-in CUI Menu
