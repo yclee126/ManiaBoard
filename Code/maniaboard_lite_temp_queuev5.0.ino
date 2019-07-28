@@ -313,114 +313,59 @@ void setup() {
 }
 
 void loop() {
-  
-  keyState[0][0] = KEY0INPUT;
-  if(keyState[0][0] == keyState[1][0]) if(keyState[2][0] == !keyState[0][0]) keyState[0][0] = !keyState[0][0];
-  keyState[0][1] = KEY1INPUT;
-  if(keyState[0][1] == keyState[1][1]) if(keyState[2][1] == !keyState[0][1]) keyState[0][1] = !keyState[0][1];
-  keyState[0][2] = KEY2INPUT;
-  if(keyState[0][2] == keyState[1][2]) if(keyState[2][2] == !keyState[0][2]) keyState[0][2] = !keyState[0][2];
-  keyState[0][3] = KEY3INPUT;
-  if(keyState[0][3] == keyState[1][3]) if(keyState[2][3] == !keyState[0][3]) keyState[0][3] = !keyState[0][3];
-  keyState[0][4] = KEY4INPUT;
-  if(keyState[0][4] == keyState[1][4]) if(keyState[2][4] == !keyState[0][4]) keyState[0][4] = !keyState[0][4];
-  keyState[0][5] = KEY5INPUT;
-  if(keyState[0][5] == keyState[1][5]) if(keyState[2][5] == !keyState[0][5]) keyState[0][5] = !keyState[0][5];
-  keyState[0][6] = FUNC0INPUT;
-  if(keyState[0][6] == keyState[1][6]) if(keyState[2][6] == !keyState[0][6]) keyState[0][6] = !keyState[0][6];
-  keyState[0][7] = FUNC1INPUT;
-  if(keyState[0][7] == keyState[1][7]) if(keyState[2][7] == !keyState[0][7]) keyState[0][7] = !keyState[0][7];
-  Keyboard.packet(
-    mod[slot][0]*keyState[0][0] | mod[slot][1]*keyState[0][1] | mod[slot][2]*keyState[0][2] | mod[slot][3]*keyState[0][3] | mod[slot][4]*keyState[0][4] | mod[slot][5]*keyState[0][5] | mod[slot][6]*keyState[0][6] | mod[slot][7]*keyState[0][7],
-    key[slot][0]*keyState[0][0],
-    key[slot][1]*keyState[0][1],
-    key[slot][2]*keyState[0][2],
-    key[slot][3]*keyState[0][3],
-    key[slot][4]*keyState[0][4],
-    key[slot][5]*keyState[0][5],
-    key[slot][6]*keyState[0][6],
-    key[slot][7]*keyState[0][7],
-    0,
-    0,
-    0,
-    0
-  );
-  
-  checkFunc(0);                                                                                                                                                               
 
-  PORTF ^= B00010000;
-  
-  keyState[1][0] = KEY0INPUT;
-  if(keyState[1][0] == keyState[2][0]) if(keyState[0][0] == !keyState[1][0]) keyState[1][0] = !keyState[1][0];
-  keyState[1][1] = KEY1INPUT;
-  if(keyState[1][1] == keyState[2][1]) if(keyState[0][1] == !keyState[1][1]) keyState[1][1] = !keyState[1][1];
-  keyState[1][2] = KEY2INPUT;
-  if(keyState[1][2] == keyState[2][2]) if(keyState[0][2] == !keyState[1][2]) keyState[1][2] = !keyState[1][2];
-  keyState[1][3] = KEY3INPUT;
-  if(keyState[1][3] == keyState[2][3]) if(keyState[0][3] == !keyState[1][3]) keyState[1][3] = !keyState[1][3];
-  keyState[1][4] = KEY4INPUT;
-  if(keyState[1][4] == keyState[2][4]) if(keyState[0][4] == !keyState[1][4]) keyState[1][4] = !keyState[1][4];
-  keyState[1][5] = KEY5INPUT;
-  if(keyState[1][5] == keyState[2][5]) if(keyState[0][5] == !keyState[1][5]) keyState[1][5] = !keyState[1][5];
-  keyState[1][6] = FUNC0INPUT;
-  if(keyState[1][6] == keyState[2][6]) if(keyState[0][6] == !keyState[1][6]) keyState[1][6] = !keyState[1][6];
-  keyState[1][7] = FUNC1INPUT;
-  if(keyState[1][7] == keyState[2][7]) if(keyState[0][7] == !keyState[1][7]) keyState[1][7] = !keyState[1][7];
-  Keyboard.packet(
-    mod[slot][0]*keyState[1][0] | mod[slot][1]*keyState[1][1] | mod[slot][2]*keyState[1][2] | mod[slot][3]*keyState[1][3] | mod[slot][4]*keyState[1][4] | mod[slot][5]*keyState[1][5] | mod[slot][6]*keyState[1][6] | mod[slot][7]*keyState[1][7],
-    key[slot][0]*keyState[1][0],
-    key[slot][1]*keyState[1][1],
-    key[slot][2]*keyState[1][2],
-    key[slot][3]*keyState[1][3],
-    key[slot][4]*keyState[1][4],
-    key[slot][5]*keyState[1][5],
-    key[slot][6]*keyState[1][6],
-    key[slot][7]*keyState[1][7],
-    0,
-    0,
-    0,
-    0
-  );
-  
-  checkFunc(1);
+  for(uint8_t i = 0; i < 3; i ++){
+    
+    for(uint8_t k = 0; k < 8; k ++){
+      switch(k){
+        case 0:
+          keyState[i][k] = KEY0INPUT;
+          break;
+        case 1:
+          keyState[i][k] = KEY1INPUT;
+          break;
+        case 2:
+          keyState[i][k] = KEY2INPUT;
+          break;
+        case 3:
+          keyState[i][k] = KEY3INPUT;
+          break;
+        case 4:
+          keyState[i][k] = KEY4INPUT;
+          break;
+        case 5:
+          keyState[i][k] = KEY5INPUT;
+          break;
+        case 6:
+          keyState[i][k] = FUNC0INPUT;
+          break;
+        case 7:
+          keyState[i][k] = FUNC1INPUT;
+          break;
+      }
+      if(keyState[i][k] == keyState[(i+1)%3][k]) if(keyState[(i+2)%3][k] == !keyState[i][k]) keyState[i][k] = !keyState[i][k];
+    }
 
-  PORTF ^= B00010000;
-  
-  keyState[2][0] = KEY0INPUT;
-  if(keyState[2][0] == keyState[0][0]) if(keyState[1][0] == !keyState[2][0]) keyState[2][0] = !keyState[2][0];
-  keyState[2][1] = KEY1INPUT;
-  if(keyState[2][1] == keyState[0][1]) if(keyState[1][1] == !keyState[2][1]) keyState[2][1] = !keyState[2][1];
-  keyState[2][2] = KEY2INPUT;
-  if(keyState[2][2] == keyState[0][2]) if(keyState[1][2] == !keyState[2][2]) keyState[2][2] = !keyState[2][2];
-  keyState[2][3] = KEY3INPUT;
-  if(keyState[2][3] == keyState[0][3]) if(keyState[1][3] == !keyState[2][3]) keyState[2][3] = !keyState[2][3];
-  keyState[2][4] = KEY4INPUT;
-  if(keyState[2][4] == keyState[0][4]) if(keyState[1][4] == !keyState[2][4]) keyState[2][4] = !keyState[2][4];
-  keyState[2][5] = KEY5INPUT;
-  if(keyState[2][5] == keyState[0][5]) if(keyState[1][5] == !keyState[2][5]) keyState[2][5] = !keyState[2][5];
-  keyState[2][6] = FUNC0INPUT;
-  if(keyState[2][6] == keyState[0][6]) if(keyState[1][6] == !keyState[2][6]) keyState[2][6] = !keyState[2][6];
-  keyState[2][7] = FUNC1INPUT;
-  if(keyState[2][7] == keyState[0][7]) if(keyState[1][7] == !keyState[2][7]) keyState[2][7] = !keyState[2][7];
-  Keyboard.packet(
-    mod[slot][0]*keyState[2][0] | mod[slot][1]*keyState[2][1] | mod[slot][2]*keyState[2][2] | mod[slot][3]*keyState[2][3] | mod[slot][4]*keyState[2][4] | mod[slot][5]*keyState[2][5] | mod[slot][6]*keyState[2][6] | mod[slot][7]*keyState[2][7],
-    key[slot][0]*keyState[2][0],
-    key[slot][1]*keyState[2][1],
-    key[slot][2]*keyState[2][2],
-    key[slot][3]*keyState[2][3],
-    key[slot][4]*keyState[2][4],
-    key[slot][5]*keyState[2][5],
-    key[slot][6]*keyState[2][6],
-    key[slot][7]*keyState[2][7],
-    0,
-    0,
-    0,
-    0
-  );
-  
-  checkFunc(2);
-
-  PORTF ^= B00010000;
+    Keyboard.packet(
+      mod[slot][0]*keyState[i][0] | mod[slot][1]*keyState[i][1] | mod[slot][2]*keyState[i][2] | mod[slot][3]*keyState[i][3] | mod[slot][4]*keyState[i][4] | mod[slot][5]*keyState[i][5] | mod[slot][6]*keyState[i][6] | mod[slot][7]*keyState[i][7],
+      key[slot][0]*keyState[i][0],
+      key[slot][1]*keyState[i][1],
+      key[slot][2]*keyState[i][2],
+      key[slot][3]*keyState[i][3],
+      key[slot][4]*keyState[i][4],
+      key[slot][5]*keyState[i][5],
+      key[slot][6]*keyState[i][6],
+      key[slot][7]*keyState[i][7],
+      0,
+      0,
+      0,
+      0
+    );
+    
+    checkFunc(i);
+    PORTF ^= B00010000;
+    
+  }
   
 }
 
