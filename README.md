@@ -22,12 +22,10 @@ Features
   - 350Hz polling rate on average (Up to 400Hz)
   - Fast assembly-level pin reading
   - Fast debouncing
-- Exchangeable Cherry keys (Kalih socket)
-  - Easy to repair
+- Kalih Socket mount
+  - Exchangeable Cherry keys
 - Custom Keycaps
   - Lightweight and durable
-- Anti-Slip Pads
-  - Works with cheap rubber pads
 - LED for each 6 keys
   - 4 different LED modes
   - Fast data transfer code
@@ -37,6 +35,7 @@ Features
 - Multiple Keymaps
   - With distinct LED color
 - Built-in CUI Menu
+  - Coder-friendly menu code
   - Change key mapping
   - Manage keymap slots
   - Multilingual menu (WIP)
