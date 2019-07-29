@@ -8,7 +8,7 @@ Process Priority
 3. Sending USB report to host
 4. Doing Everything else then loop to 1.
 
-Each process should achieve lowest possible processing time.
+Each process should achieve lowest possible processing time to increase the polling rate.
 
 Detailed Specification
 ----------------------
