@@ -31,6 +31,7 @@ Features
   - Fast data transfer code
 - KPS Calculation (Keys Per Second)
   - Up to 600 KPS
+  - Fast integer time calculation
   - Max KPS indication
 - Multiple Keymaps
   - With distinct LED color
