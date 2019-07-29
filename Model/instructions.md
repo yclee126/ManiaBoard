@@ -8,4 +8,4 @@ Print Settings
 Known defects
 -------------
 
-- The pushbutton hole at the right side is too small
+- The push button holes at the right side is too small
